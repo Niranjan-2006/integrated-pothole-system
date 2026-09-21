@@ -30,6 +30,6 @@ def test_register_user_rejects_admin_name():
 
 def test_register_user_success(monkeypatch):
     monkeypatch.setattr("app.auth.session.create_user", lambda u, p: True)
-    success, message = register_user("field_agent", "password123", "password123")
+    success, message = register_user("field_officer", "password123", "password123")
     assert success is True
     assert "successful" in message.lower()

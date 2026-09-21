@@ -129,8 +129,8 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
     .panel-history-sub,
     .resolve-panel-meta,
     .resolve-panel-note,
-    .claude-hero-subtitle,
-    .cg-desc {{
+    .hero-subtitle,
+    .feature-desc {{
         color: var(--text-light) !important;
     }}
 
@@ -139,7 +139,7 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
     .command-shell,
     .resolve-panel-shell,
     .preview-shell,
-    .cg-card,
+    .feature-card,
     .contact-card,
     .page-footer,
     .page-footer-card {{
@@ -624,7 +624,7 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
         font-weight: 700;
     }}
 
-    .claude-hero-container {{
+    .hero-container {{
         margin-top: 0;
         padding: 6px 0 12px 0;
     }}
@@ -667,7 +667,7 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
         background: color-mix(in srgb, var(--secondary-hover) 88%, var(--input-bg));
     }}
 
-    .claude-hero-topline {{
+    .hero-topline {{
         font-size: 0.74rem;
         text-transform: uppercase;
         letter-spacing: 1.5px;
@@ -676,7 +676,7 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
         margin-bottom: 8px;
     }}
 
-    .claude-hero-title {{
+    .hero-title {{
         font-size: clamp(2rem, 3.5vw, 3.2rem) !important;
         margin-bottom: 8px !important;
         line-height: 1.05;
@@ -792,37 +792,37 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
         line-height: 1.55;
     }}
 
-    .claude-grid-visual {{
+    .feature-grid-visual {{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
         margin-top: 18px;
     }}
 
-    .cg-card {{
+    .feature-card {{
         border-radius: 16px;
         padding: 22px;
         transition: transform var(--anim-med) ease, box-shadow var(--anim-med) ease;
         animation: fade-slide-up var(--anim-med) ease;
     }}
 
-    .cg-card:hover {{
+    .feature-card:hover {{
         transform: translateY(-2px);
         box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
     }}
 
-    .cg-card-large,
-    .cg-card-wide {{
+    .feature-card-large,
+    .feature-card-wide {{
         grid-column: span 2;
     }}
 
-    .cg-icon {{
+    .feature-icon {{
         font-size: 1.8rem;
         margin-bottom: 14px;
         color: var(--text-main);
     }}
 
-    .cg-title {{
+    .feature-title {{
         font-weight: 700;
         font-size: 1.05rem;
         color: var(--text-main);
@@ -974,14 +974,14 @@ def inject_global_styles(theme: dict, show_sidebar: bool) -> None:
             gap: 6px;
         }}
 
-        .claude-grid-visual,
+        .feature-grid-visual,
         .contact-grid,
         .page-footer-grid {{
             grid-template-columns: 1fr;
         }}
 
-        .cg-card-large,
-        .cg-card-wide {{
+        .feature-card-large,
+        .feature-card-wide {{
             grid-column: span 1;
         }}
 

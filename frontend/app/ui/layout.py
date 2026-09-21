@@ -25,11 +25,11 @@ def render_home_page() -> None:
             <div class='landing-topbar-brand'>Road Safety Command</div>
             <a class='landing-login-link' href='#secure-login'>Login</a>
         </div>
-        <section class="claude-hero-container">
-            <div class="claude-hero-topline">Road Safety Command</div>
-            <div class="claude-hero-text">
-                <h1 class='headline-title claude-hero-title'>Good Morning</h1>
-                <p class="claude-hero-subtitle">
+        <section class="hero-container">
+            <div class="hero-topline">Road Safety Command</div>
+            <div class="hero-text">
+                <h1 class='headline-title hero-title'>Good Morning</h1>
+                <p class="hero-subtitle">
                     Welcome back to the Road Safety Command. Access your unified dashboard to resolve active clusters and view municipal metrics.
                 </p>
             </div>
@@ -115,26 +115,26 @@ def render_home_page() -> None:
     with right:
         st.markdown(
             '''
-            <div class='claude-grid-visual'>
-                <div class='cg-card cg-card-large'>
-                    <div class='cg-icon'>*</div>
-                    <div class='cg-title'>Density Heatmap Intelligence</div>
-                    <div class='cg-desc'>Analyze massive road clusters instantly, spotting critical infrastructure decay before it affects transit corridors.</div>
+            <div class='feature-grid-visual'>
+                <div class='feature-card feature-card-large'>
+                    <div class='feature-icon'>*</div>
+                    <div class='feature-title'>Density Heatmap Intelligence</div>
+                    <div class='feature-desc'>Analyze massive road clusters instantly, spotting critical infrastructure decay before it affects transit corridors.</div>
                 </div>
-                <div class='cg-card'>
-                    <div class='cg-icon'>+</div>
-                    <div class='cg-title'>Audit Trails</div>
-                    <div class='cg-desc'>Track resolution events transparently.</div>
+                <div class='feature-card'>
+                    <div class='feature-icon'>+</div>
+                    <div class='feature-title'>Audit Trails</div>
+                    <div class='feature-desc'>Track resolution events transparently.</div>
                 </div>
-                <div class='cg-card'>
-                    <div class='cg-icon'>#</div>
-                    <div class='cg-title'>Role Framework</div>
-                    <div class='cg-desc'>Granular admin permissions.</div>
+                <div class='feature-card'>
+                    <div class='feature-icon'>#</div>
+                    <div class='feature-title'>Role Framework</div>
+                    <div class='feature-desc'>Granular admin permissions.</div>
                 </div>
-                <div class='cg-card cg-card-wide'>
-                    <div class='cg-icon'>~</div>
-                    <div class='cg-title'>High-Speed Action Panels</div>
-                    <div class='cg-desc'>Switch to scatter mode to target and mark immediate repairs directly from the active command overlay.</div>
+                <div class='feature-card feature-card-wide'>
+                    <div class='feature-icon'>~</div>
+                    <div class='feature-title'>High-Speed Action Panels</div>
+                    <div class='feature-desc'>Switch to scatter mode to target and mark immediate repairs directly from the active command overlay.</div>
                 </div>
             </div>
             ''', unsafe_allow_html=True
